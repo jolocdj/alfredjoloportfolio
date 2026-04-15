@@ -1,0 +1,73 @@
+.global-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at center, rgba(88, 99, 255, 0.06), transparent 45%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+html.dark .global-bg {
+  background:
+    radial-gradient(circle at center, rgba(88, 99, 255, 0.08), transparent 45%),
+    linear-gradient(180deg, #06102a 0%, #040816 100%);
+}
+
+/* grid */
+.global-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    black 60%,
+    transparent 100%
+  );
+  opacity: 0.55;
+}
+
+html.dark .global-bg::before {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* glow */
+.bg-glow {
+  position: absolute;
+  width: 1400px;
+  height: 1400px;
+  left: 70%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(94, 106, 255, 0.12) 0%,
+    rgba(94, 106, 255, 0.05) 30%,
+    transparent 70%
+  );
+  filter: blur(80px);
+}
+
+/* circle */
+.bg-circle {
+  position: absolute;
+  border-radius: 9999px;
+}
+
+.bg-circle-main {
+  width: 800px;
+  height: 800px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(120, 130, 255, 0.05);
+  opacity: 0.35;
+}

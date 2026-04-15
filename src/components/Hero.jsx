@@ -63,29 +63,17 @@ export default function Hero({ dark }) {
       <div className="pointer-events-none absolute inset-x-0 -top-20 bottom-0 overflow-hidden">
         {" "}
         <div className="absolute left-[10%] top-[8%] h-[980px] w-[980px] rounded-full bg-indigo-400/[0.05] blur-3xl" />
-        {dark && (
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px),
-                        linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px)`,
-              backgroundSize: "60px 60px",
-              backgroundPosition: "top left",
-              filter: "blur(0.2px)",
-            }}
-          />
-        )}
-        <div className="absolute right-[2%] top-[5%] h-[540px] w-[540px] rounded-full border border-indigo-500/20 bg-transparent" />
+        <div className="absolute right-[5%] top-[33%] h-[350px] w-[350px] rounded-full border border-indigo-400/20 bg-transparent" />{" "}
         <div className="absolute right-[3%]top-[16%] h-[560px] w-[560px] rounded-full border border-indigo-500/25 ring-float-1" />
         <div className="absolute right-[-1%] top-[54%] h-[420px] w-[420px] rounded-full border border-indigo-500/18 ring-float-1" />
         <div className="absolute right-[-6%] top-[54%] h-[560px] w-[560px] rounded-full border border-indigo-500/10 border-dashed ring-float-2" />
         <div className="absolute right-[18%] top-[46%] text-[86px] leading-none font-mono text-indigo-500/55">
           &lt;/&gt;
         </div>
-        <div className="absolute right-[37%] top-[40%] h-3 w-3 rounded-full bg-fuchsia-500/85 float-dot-1" />
-        <div className="absolute right-[27%] top-[37%] h-5 w-5 rounded-full bg-violet-400/90 float-dot-3" />
-        <div className="absolute right-[19%] top-[30%] h-4 w-4 rounded-full bg-indigo-400/85 float-dot-2" />
-        <div className="absolute right-[15%] top-[73%] h-3 w-3 rounded-full bg-violet-400/80 float-dot-2" />
+        <div className="absolute right-[37%] top-[40%] h-3 w-2 rounded-full bg-fuchsia-500/85 float-dot-1" />
+        <div className="absolute right-[27%] top-[37%] h-4 w-4 rounded-full bg-violet-400/90 float-dot-3" />
+        <div className="absolute right-[19%] top-[30%] h-5 w-5 rounded-full bg-indigo-400/85 float-dot-2" />
+        <div className="absolute right-[15%] top-[73%] h-1w-1 rounded-full bg-violet-400/80 float-dot-2" />
       </div>
 
       <div className="relative z-10 pt-0 max-w-[1600px] mx-auto px-41">
