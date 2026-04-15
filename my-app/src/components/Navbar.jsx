@@ -1,10 +1,10 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import { Sun, Moon } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar({ dark, setDark }) {
   const [showSticky, setShowSticky] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,19 +47,24 @@ export default function Navbar({ dark, setDark }) {
         </div>
         <div className="absolute left-1/2 top-6 -translate-x-1/2 flex items-center gap-2">
           {" "}
-          {["Home", "About", "Works", "Contact"].map((item) => (
-            <a
-              key={item}
-              href="#"
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                item === "Home"
-                  ? "bg-gray-900 text-white dark:bg-white/10 dark:text-white"
-                  : "text-gray-700 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
-              }`}
-            >
-              {item}
-            </a>
-          ))}
+          {["Home", "About"].map((item) => {
+            const path = item === "Home" ? "/" : "/about";
+            const isActive = location.pathname === path;
+
+            return (
+              <Link
+                key={item}
+                to={path}
+                className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  isActive
+                    ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900"
+                    : "text-gray-700 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                }`}
+              >
+                {item}
+              </Link>
+            );
+          })}
         </div>
         <div className="flex items-center pr-50">
           {" "}

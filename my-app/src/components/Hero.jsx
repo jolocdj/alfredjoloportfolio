@@ -63,29 +63,17 @@ export default function Hero({ dark }) {
       <div className="pointer-events-none absolute inset-x-0 -top-20 bottom-0 overflow-hidden">
         {" "}
         <div className="absolute left-[10%] top-[8%] h-[980px] w-[980px] rounded-full bg-indigo-400/[0.05] blur-3xl" />
-        {dark && (
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px),
-                        linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px)`,
-              backgroundSize: "60px 60px",
-              backgroundPosition: "top left",
-              filter: "blur(0.2px)",
-            }}
-          />
-        )}
-        <div className="absolute right-[2%] top-[5%] h-[540px] w-[540px] rounded-full border border-indigo-500/20 bg-transparent" />
+        <div className="absolute right-[5%] top-[33%] h-[350px] w-[350px] rounded-full border border-indigo-400/20 bg-transparent" />{" "}
         <div className="absolute right-[3%]top-[16%] h-[560px] w-[560px] rounded-full border border-indigo-500/25 ring-float-1" />
         <div className="absolute right-[-1%] top-[54%] h-[420px] w-[420px] rounded-full border border-indigo-500/18 ring-float-1" />
         <div className="absolute right-[-6%] top-[54%] h-[560px] w-[560px] rounded-full border border-indigo-500/10 border-dashed ring-float-2" />
         <div className="absolute right-[18%] top-[46%] text-[86px] leading-none font-mono text-indigo-500/55">
           &lt;/&gt;
         </div>
-        <div className="absolute right-[37%] top-[40%] h-3 w-3 rounded-full bg-fuchsia-500/85 float-dot-1" />
-        <div className="absolute right-[27%] top-[37%] h-5 w-5 rounded-full bg-violet-400/90 float-dot-3" />
-        <div className="absolute right-[19%] top-[30%] h-4 w-4 rounded-full bg-indigo-400/85 float-dot-2" />
-        <div className="absolute right-[15%] top-[73%] h-3 w-3 rounded-full bg-violet-400/80 float-dot-2" />
+        <div className="absolute right-[37%] top-[40%] h-3 w-2 rounded-full bg-fuchsia-500/85 float-dot-1" />
+        <div className="absolute right-[27%] top-[37%] h-4 w-4 rounded-full bg-violet-400/90 float-dot-3" />
+        <div className="absolute right-[19%] top-[30%] h-5 w-5 rounded-full bg-indigo-400/85 float-dot-2" />
+        <div className="absolute right-[15%] top-[73%] h-1w-1 rounded-full bg-violet-400/80 float-dot-2" />
       </div>
 
       <div className="relative z-10 pt-0 max-w-[1600px] mx-auto px-41">
@@ -158,7 +146,7 @@ export default function Hero({ dark }) {
         {/* Footer-like section */}
         <div className="w-full max-w-[1360px] mx-auto text-gray-500 dark:text-gray-400">
           {/* Top Row */}
-          <div className="flex items-start justify-between mb-10">
+          <div className="flex items-center justify-between mb-10">
             {/* Left */}
             <div className="max-w-[320px]">
               <img
@@ -174,7 +162,7 @@ export default function Hero({ dark }) {
             </div>
 
             {/* Center */}
-            <div className="flex items-center gap-10 text-sm">
+            <div className="flex items-center gap-12 text-sm self-center">
               {["Home", "About", "Works", "Contact"].map((item) => (
                 <a
                   key={item}
@@ -189,24 +177,38 @@ export default function Hero({ dark }) {
             {/* Right */}
             <div className="flex items-center gap-5">
               <a
-                href="https://github.com/"
+                href="https://github.com/jolocdj"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
-                <svg width="22" height="22" fill="currentColor">
-                  <path d="M12 0C5.37 0 0 5.37 0 12a12 12 0 008.2 11.4c.6.1.82-.26.82-.58v-2c-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.75-1.34-1.75-1.1-.76.08-.75.08-.75 1.22.09 1.86 1.25 1.86 1.25 1.08 1.84 2.83 1.31 3.52 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0C17.8 4.93 18.8 5.25 18.8 5.25c.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.62-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0112 6.836a9.58 9.58 0 012.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                  />
                 </svg>
               </a>
 
               <a
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/in/alfred-jolo-de-jesus-5227b7379/?locale=en"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-gray-900 dark:hover:text-white transition-colors"
               >
-                <svg width="22" height="22" fill="currentColor">
-                  <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.6v2.2h.05c.5-.95 1.7-2.2 3.5-2.2 3.75 0 4.45 2.47 4.45 5.68V24h-4v-8.8c0-2.1-.04-4.8-2.93-4.8-2.93 0-3.38 2.29-3.38 4.65V24h-4V8z" />
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
               </a>
             </div>
