@@ -10,15 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "react-router-dom": "^7.14.1",
-    "vite": "^8.0.8"
-=======
     "lucide-react": "^1.8.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0"
->>>>>>> 683dcbe07df1689b6971004f03381f80322e9c40
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",

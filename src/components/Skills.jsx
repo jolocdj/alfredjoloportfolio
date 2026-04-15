@@ -111,7 +111,7 @@ export default function Skills({ dark }) {
             return (
               <div
                 key={cat.title}
-                className={`fade-in-el min-h-[250px] rounded-[28px] border p-6 backdrop-blur-xl ${cardClass} ${positionFix}`}
+                className={`fade-in-el min-h-[250px] rounded-[28px] border border-[0.5px] p-6 backdrop-blur-xl transition-colors duration-300 hover:border-[#78879e] ${cardClass} ${positionFix}`}
                 style={{ transitionDelay: `${0.1 + i * 0.1}s` }}
               >
                 <p className="mb-5 text-[15px] font-semibold tracking-wide text-slate-400">

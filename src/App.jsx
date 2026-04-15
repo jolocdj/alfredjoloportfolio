@@ -5,6 +5,10 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Background from "./components/Background";
+import Education from "./components/Education";
+import Awards from "./components/Awards";
+import Certificates from "./components/Certificates";
+import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -39,10 +43,14 @@ export default function App() {
                 <About dark={dark} />
                 <Skills dark={dark} />
                 <Experience dark={dark} />
+                <Education dark={dark} />
+                <Awards dark={dark} />
+                <Certificates dark={dark} />
               </>
             }
           />
         </Routes>
+        <Footer dark={dark} />
       </div>
     </div>
   );
