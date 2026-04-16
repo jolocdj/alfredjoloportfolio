@@ -322,93 +322,93 @@ export default function Works({ dark }) {
                 ideas.
               </p>
 
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-full font-semibold hover:shadow-lg transition-shadow"
               >
                 Let&apos;s Talk
                 <span>→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
       <style>{`
-  @keyframes rotateSlow {
-    from {
-      transform: rotate(0deg);
+    @keyframes rotateSlow {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
-    to {
-      transform: rotate(360deg);
+
+    @keyframes floatIcons {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
     }
+
+    @keyframes floatDiamond {
+      0%, 100% {
+        transform: rotate(45deg) translateY(0px);
+      }
+      50% {
+        transform: rotate(45deg) translateY(-10px);
+      }
+    }
+
+    @keyframes floatDot {
+      0%, 100% {
+        transform: translateY(0px);
+        opacity: 0.9;
+      }
+      50% {
+        transform: translateY(-6px);
+        opacity: 1;
+      }
+    }
+
+    .rotate-slow {
+      animation: rotateSlow 18s linear infinite;
+      transform-origin: center;
+    }
+
+    .float-icons {
+      animation: floatIcons 4s ease-in-out infinite;
+    }
+
+    .float-diamond {
+      animation: floatDiamond 3.6s ease-in-out infinite;
+    }
+
+    .float-dot {
+      animation: floatDot 3s ease-in-out infinite;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
-  @keyframes floatIcons {
-    0%, 100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-8px);
-    }
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+    will-change: opacity, transform;
   }
 
-  @keyframes floatDiamond {
-    0%, 100% {
-      transform: rotate(45deg) translateY(0px);
-    }
-    50% {
-      transform: rotate(45deg) translateY(-10px);
-    }
+  .fade-in-section.show {
+    opacity: 1;
+    transform: translateY(0);
   }
-
-  @keyframes floatDot {
-    0%, 100% {
-      transform: translateY(0px);
-      opacity: 0.9;
-    }
-    50% {
-      transform: translateY(-6px);
-      opacity: 1;
-    }
-  }
-
-  .rotate-slow {
-    animation: rotateSlow 18s linear infinite;
-    transform-origin: center;
-  }
-
-  .float-icons {
-    animation: floatIcons 4s ease-in-out infinite;
-  }
-
-  .float-diamond {
-    animation: floatDiamond 3.6s ease-in-out infinite;
-  }
-
-  .float-dot {
-    animation: floatDot 3s ease-in-out infinite;
-  }
-
-  .scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.9s ease, transform 0.9s ease;
-  will-change: opacity, transform;
-}
-
-.fade-in-section.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-`}</style>
+  `}</style>
 
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 dark:bg-black/60 bg-white/30 backdrop-blur-sm">
