@@ -149,6 +149,18 @@ const projects = [
 
 export default function Works({ dark }) {
   const [selectedProject, setSelectedProject] = useState(null);
+
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [selectedProject]);
   const sectionRef = useRef(null);
 
   useEffect(() => {

@@ -10,6 +10,7 @@ import Awards from "./components/Awards";
 import Certificates from "./components/Certificates";
 import Works from "./components/Works";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -51,6 +52,7 @@ export default function App() {
             }
           />
           <Route path="/works" element={<Works dark={dark} />} />
+          <Route path="/contact" element={<Contact dark={dark} />} />
         </Routes>
 
         <Footer dark={dark} />
