@@ -55,7 +55,7 @@ export default function Hero({ dark }) {
 
   return (
     <section
-      className="relative px-12 pt-0 pb-10 overflow-hidden w-full"
+      className="relative w-full overflow-hidden px-4 sm:px-6 lg:px-12 pt-0 pb-10 sm:pb-14"
       style={{
         fontFamily:
           '"SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif',
@@ -78,14 +78,14 @@ export default function Hero({ dark }) {
         <div className="absolute right-[15%] top-[73%] h-1w-1 rounded-full bg-violet-400/80 float-dot-2" />
       </div>
 
-      <div className="relative z-10 pt-0 max-w-[1600px] mx-auto px-41">
+      <div className="relative z-10 pt-0 max-w-[1100px] mx-auto px-0 sm:px-2 lg:px-6">
         {" "}
-        <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm mb-6 h-[46px] bg-[#F0EEFF] border border-[#CBC5FF] dark:bg-white/5 dark:border-white/10 transition-colors duration-300">
+        <div className="inline-flex max-w-full items-center gap-2 rounded-full px-3 sm:px-4 py-1.5 text-xs sm:text-sm mb-6 min-h-[42px] sm:h-[46px] bg-[#F0EEFF] border border-[#CBC5FF] dark:bg-white/5 dark:border-white/10 transition-colors duration-300">
           {" "}
           <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse flex-shrink-0" />
           <span
             ref={typedRef}
-            className="whitespace-nowrap text-[#5B4EF5] dark:bg-gradient-to-r dark:from-indigo-400 dark:via-violet-400 dark:to-purple-400 dark:bg-clip-text dark:text-transparent [-webkit-background-clip:text]"
+            className="max-w-[180px] sm:max-w-none truncate sm:whitespace-nowrap text-[#5B4EF5] dark:bg-gradient-to-r dark:from-indigo-400 dark:via-violet-400 dark:to-purple-400 dark:bg-clip-text dark:text-transparent [-webkit-background-clip:text]"
           />
           <span
             className="inline-block w-[2px] h-[14px] bg-[#7B61FF] dark:bg-violet-400 flex-shrink-0"
@@ -93,7 +93,7 @@ export default function Hero({ dark }) {
           />
         </div>
         <h1
-          className="text-[75px] font-bold text-gray-900 dark:text-white leading-[75px] tracking-[-1.8px] mb-6 transition-colors duration-300"
+          className="text-[38px] leading-[42px] sm:text-[52px] sm:leading-[56px] lg:text-[75px] lg:leading-[75px] font-bold text-gray-900 dark:text-white tracking-[-1px] sm:tracking-[-1.4px] lg:tracking-[-1.8px] mb-6 transition-colors duration-300"
           style={{
             fontFamily:
               '"SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
@@ -110,19 +110,19 @@ export default function Hero({ dark }) {
         </h1>
         {/* Subtext */}
         <p
-          className="text-gray-600 dark:text-gray-400 w-full max-w-[980px] mb-10 transition-colors duration-300"
+          className="text-gray-600 dark:text-gray-400 w-full max-w-[980px] mb-8 sm:mb-10 transition-colors duration-300"
           style={{
             fontFamily:
               '"SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif',
-            fontSize: "1.25rem",
-            lineHeight: "1.9rem",
+            fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
+            lineHeight: "clamp(1.6rem, 3vw, 1.9rem)",
           }}
         >
           I build scalable web applications with React Native, Javascript, and
           modern technologies.
         </p>
         {/* CTA Buttons */}
-        <div className="flex gap-4 mb-2">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-2 w-full sm:w-auto">
           {" "}
           <Link
             to="/works"
@@ -130,10 +130,12 @@ export default function Hero({ dark }) {
           >
             View My Work <span>→</span>
           </Link>
-          <button className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-semibold text-base text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-600 transition-all hover:shadow-lg">
-            {" "}
+          <Link
+            to="/contact"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full font-semibold text-base text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-600 transition-all hover:shadow-lg w-full sm:w-auto"
+          >
             Get in Touch
-          </button>
+          </Link>
         </div>
         <div className="relative z-11 w-full max-w-[1100px]">
           <Stats />
