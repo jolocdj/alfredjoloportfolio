@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Footer({ dark }) {
   return (
     <>
@@ -31,14 +32,19 @@ export default function Footer({ dark }) {
 
           {/* Center */}
           <div className="flex items-center gap-8 md:gap-12 text-sm flex-wrap">
-            {["Home", "About", "Works", "Contact"].map((item) => (
-              <a
-                key={item}
-                href="#"
+            {[
+              { name: "Home", path: "/" },
+              { name: "About", path: "/about" },
+              { name: "Works", path: "/works" },
+              { name: "Contact", path: "/contact" },
+            ].map((item) => (
+              <Link
+                key={item.name}
+                to={item.path}
                 className="hover:text-gray-900 dark:hover:text-white transition-colors duration-300"
               >
-                {item}
-              </a>
+                {item.name}
+              </Link>
             ))}
           </div>
 

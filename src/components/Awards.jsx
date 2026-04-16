@@ -40,7 +40,7 @@ const awards = [
     date: "Oct 2015",
   },
   {
-    title: "Best in Religion (Elementary)",
+    title: "Best in Religion",
     organization: "Vincente T. Reyes Elementary School",
     date: "Oct 2015",
   },
@@ -50,7 +50,7 @@ const awards = [
     date: "Sep 2014",
   },
   {
-    title: "Solutatoryan in Kinder Graduation",
+    title: "Salutatorian in Kinder Graduation",
     organization: "Iba Day Care Center",
     date: "Oct 2009",
   },

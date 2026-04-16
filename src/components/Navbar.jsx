@@ -47,21 +47,24 @@ export default function Navbar({ dark, setDark }) {
         </div>
         <div className="absolute left-1/2 top-6 -translate-x-1/2 flex items-center gap-2">
           {" "}
-          {["Home", "About"].map((item) => {
-            const path = item === "Home" ? "/" : "/about";
-            const isActive = location.pathname === path;
+          {[
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about" },
+            { name: "Works", path: "/works" },
+          ].map((item) => {
+            const isActive = location.pathname === item.path;
 
             return (
               <Link
-                key={item}
-                to={path}
+                key={item.name}
+                to={item.path}
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   isActive
                     ? "bg-gray-900 text-white dark:bg-white dark:text-gray-900"
                     : "text-gray-700 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
                 }`}
               >
-                {item}
+                {item.name}
               </Link>
             );
           })}

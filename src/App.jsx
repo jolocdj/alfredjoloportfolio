@@ -8,6 +8,7 @@ import Background from "./components/Background";
 import Education from "./components/Education";
 import Awards from "./components/Awards";
 import Certificates from "./components/Certificates";
+import Works from "./components/Works";
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 
@@ -49,7 +50,9 @@ export default function App() {
               </>
             }
           />
+          <Route path="/works" element={<Works dark={dark} />} />
         </Routes>
+
         <Footer dark={dark} />
       </div>
     </div>

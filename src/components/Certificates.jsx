@@ -106,9 +106,11 @@ export default function Certificates({ dark }) {
                   </p>
                 </div>
 
-                <div className="shrink-0 text-slate-400 transition-colors duration-300 group-hover:text-[#78879e] dark:text-slate-500">
-                  <ExternalLink size={18} />
-                </div>
+                {item.link && (
+                  <div className="shrink-0 text-slate-400 transition-colors duration-300 group-hover:text-[#78879e] dark:text-slate-500">
+                    <ExternalLink size={18} />
+                  </div>
+                )}
               </div>
             </a>
           ))}

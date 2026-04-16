@@ -1,5 +1,6 @@
 import Stats from "./Stats";
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const PHRASES = [
   "Part-time opportunities are welcome",
@@ -63,11 +64,12 @@ export default function Hero({ dark }) {
       <div className="pointer-events-none absolute inset-x-0 -top-20 bottom-0 overflow-hidden">
         {" "}
         <div className="absolute left-[10%] top-[8%] h-[980px] w-[980px] rounded-full bg-transparent blur-0" />{" "}
-        <div className="absolute right-[5%] top-[33%] h-[350px] w-[350px] rounded-full border border-indigo-400/20 bg-transparent" />{" "}
+        <div className="absolute right-[10%] top-[45%] h-[250px] w-[250px] rounded-full border border-indigo-400/20 bg-transparent" />{" "}
         <div className="absolute right-[3%]top-[16%] h-[560px] w-[560px] rounded-full border border-indigo-500/25 ring-float-1" />
         <div className="absolute right-[-1%] top-[54%] h-[420px] w-[420px] rounded-full border border-indigo-500/18 ring-float-1" />
         <div className="absolute right-[-6%] top-[54%] h-[560px] w-[560px] rounded-full border border-indigo-500/10 border-dashed ring-float-2" />
-        <div className="absolute right-[18%] top-[46%] text-[86px] leading-none font-mono text-indigo-500/55">
+        <div className="absolute right-[5%] top-[43%] h-[350px] w-[350px] rounded-full border border-indigo-400/20 ring-glow" />
+        <div className="absolute right-[18%] top-[46%] text-[86px] leading-none font-mono text-indigo-500/55 float-code">
           &lt;/&gt;
         </div>
         <div className="absolute right-[37%] top-[40%] h-3 w-2 rounded-full bg-fuchsia-500/85 float-dot-1" />
@@ -104,7 +106,7 @@ export default function Hero({ dark }) {
             Jolo
           </span>
           .<br />
-          Software Engineer.{" "}
+          Full Stack Developer.{" "}
         </h1>
         {/* Subtext */}
         <p
@@ -122,11 +124,13 @@ export default function Hero({ dark }) {
         {/* CTA Buttons */}
         <div className="flex gap-4 mb-2">
           {" "}
-          <button className="bg-gray-900 text-white dark:bg-white dark:text-gray-900 px-7 py-3.5 rounded-full font-semibold flex items-center gap-2 hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors">
-            {" "}
+          <Link
+            to="/works"
+            className="group inline-flex items-center gap-2 bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-6 py-3.5 rounded-full font-semibold text-base transition-all hover:gap-4 hover:shadow-xl hover:shadow-slate-900/20 dark:hover:shadow-white/20"
+          >
             View My Work <span>→</span>
-          </button>
-          <button className="border border-black/15 dark:border-white/20 text-gray-900 dark:text-white px-7 py-3.5 rounded-full font-semibold hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+          </Link>
+          <button className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-semibold text-base text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-600 transition-all hover:shadow-lg">
             {" "}
             Get in Touch
           </button>
@@ -136,10 +140,38 @@ export default function Hero({ dark }) {
         </div>
       </div>
       <style>{`
-        @keyframes blink {
+              @keyframes blink {
           0%, 100% { opacity: 1; }
           50% { opacity: 0; }
         }
+
+        @keyframes ringGlow {
+          0%, 100% {
+            opacity: 0.22;
+            box-shadow: 0 0 0 rgba(99, 102, 241, 0);
+          }
+          50% {
+            opacity: 0.55;
+            box-shadow: 0 0 22px rgba(99, 102, 241, 0.22);
+          }
+        }
+
+        .ring-glow {
+          animation: ringGlow 3.8s ease-in-out infinite;
+        }
+
+        @keyframes floatCode {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.float-code {
+  animation: floatCode 4s ease-in-out infinite;
+}
       `}</style>
     </section>
   );
