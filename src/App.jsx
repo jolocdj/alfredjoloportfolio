@@ -11,6 +11,7 @@ import Certificates from "./components/Certificates";
 import Works from "./components/Works";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -35,6 +36,7 @@ export default function App() {
       <Background />
       <div className="relative z-10">
         <Navbar dark={dark} setDark={setDark} />
+        <ScrollToTop />
 
         <Routes>
           <Route path="/" element={<Hero dark={dark} />} />
