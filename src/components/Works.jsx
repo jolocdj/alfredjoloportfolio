@@ -322,13 +322,13 @@ export default function Works({ dark }) {
                 ideas.
               </p>
 
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-full font-semibold hover:shadow-lg transition-shadow"
               >
                 Let&apos;s Talk
                 <span>→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
