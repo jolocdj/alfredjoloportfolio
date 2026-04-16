@@ -106,7 +106,7 @@ export default function Hero({ dark }) {
             Jolo
           </span>
           .<br />
-          Full Stack Developer.{" "}
+          Software Developer.{" "}
         </h1>
         {/* Subtext */}
         <p

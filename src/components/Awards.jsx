@@ -8,6 +8,11 @@ const awards = [
     date: "June 2026",
   },
   {
+    title: "Candidate for Best in Thesis",
+    organization: "Bulacan State University",
+    date: "November 2025",
+  },
+  {
     title: "Dean's Lister (2023-2024)",
     organization: "Bulacan State University",
     date: "June 2024",
@@ -24,7 +29,7 @@ const awards = [
     date: "Apr 2021",
   },
   {
-    title: "With High Honors",
+    title: "With Honors",
     organization: "Iba National High School",
     date: "April 2019",
   },
@@ -37,22 +42,17 @@ const awards = [
   {
     title: "With Honorable Mention",
     organization: "Vincente T. Reyes Elementary School",
-    date: "Oct 2015",
+    date: "April 2015",
   },
   {
     title: "Best in Religion",
     organization: "Vincente T. Reyes Elementary School",
-    date: "Oct 2015",
+    date: "April 2015",
   },
   {
-    title: "3rd place in Web Designing Contest",
-    organization: "Informatics SM City North-EDSA",
-    date: "Sep 2014",
-  },
-  {
-    title: "Salutatorian in Kinder Graduation",
+    title: "Salutatorian in Kinder",
     organization: "Iba Day Care Center",
-    date: "Oct 2009",
+    date: "May 2009",
   },
 ];
 

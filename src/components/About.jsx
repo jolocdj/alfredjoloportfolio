@@ -36,7 +36,7 @@ export default function About({ dark }) {
               className={`mt-5 text-sm text-xl
  ${dark ? "text-gray-400" : "text-slate-500"}`}
             >
-              Software Engineer focused on building reliable and scalable web
+              Software Developer focused on building reliable and scalable web
               applications.
             </p>
           </div>
@@ -55,10 +55,10 @@ export default function About({ dark }) {
 
                   <div>
                     <h3 className="text-2xl font-bold">Alfred Jolo De Jesus</h3>
-                    <p className="text-white/80 mt-1">Software Engineer</p>
+                    <p className="text-white/80 mt-1">Software Developer</p>
                     <p className="mt-4 text-white/90">
                       BSIT graduate from Bulacan State University. Specializing
-                      in Laravel and CodeIgniter for back-end, with front-end
+                      in Python and Javascript for back-end, with front-end
                       experience in Vue.js and React.
                     </p>
                   </div>

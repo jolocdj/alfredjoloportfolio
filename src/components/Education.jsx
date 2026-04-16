@@ -11,7 +11,7 @@ const education = [
   {
     school: "Iba National Senior High School",
     degree: "Senior High School: General Academic Strand",
-    date: "2016 - 2017",
+    date: "2019 - 2021",
     graduated: true,
   },
 ];
