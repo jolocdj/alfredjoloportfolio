@@ -35,7 +35,7 @@ export default function Navbar({ dark, setDark }) {
     <>
       {showSticky && <div className="h-[72px] sm:h-[84px]" />}{" "}
       <nav
-        className={`flex items-center justify-between px-4 sm:px-6 lg:px-12 py-3 text-gray-900 dark:text-white transition-all duration-300 ${
+        className={`flex items-center justify-between px-4 sm:px-6 lg:px-12 py-0 text-gray-900 dark:text-white transition-all duration-300 ${
           showSticky
             ? "fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/70 dark:bg-black/30 border-b border-black/10 dark:border-white/10 shadow-sm"
             : "relative"
