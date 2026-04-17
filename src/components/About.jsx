@@ -1,11 +1,35 @@
 import { MapPin, UserRound } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 export default function About({ dark }) {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const elements = sectionRef.current?.querySelectorAll(".fade-in");
+
+    if (!elements) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      },
+      { threshold: 0.15 },
+    );
+
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
   return (
     <>
       <section
+        ref={sectionRef}
         id="about"
-        className={`relative overflow-hidden px-6 md:px-12 lg:px-20 py-24 transition-colors duration-300 ${
+        className={`relative overflow-hidden px-6 md:px-12 lg:px-20 py-9 transition-colors duration-300 ${
           dark ? "bg-transparent text-white" : "bg-transparent text-[#0f172a]"
         }`}
       >
@@ -29,7 +53,7 @@ export default function About({ dark }) {
         <div className="relative z-10 mx-auto max-w-[1100px]">
           {" "}
           {/* Heading */}
-          <div className="max-w-2xl">
+          <div className="max-w-2xl fade-in">
             {" "}
             <h2 className="text-2xl md:text-5xl font-bold">About Me</h2>
             <p
@@ -41,7 +65,7 @@ export default function About({ dark }) {
             </p>
           </div>
           {/* Cards */}
-          <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-[2fr_1fr] items-stretch">
+          <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-[2fr_1fr] items-stretch fade-in">
             {" "}
             {/* Main card */}
             <div className="rounded-[32px] bg-gradient-to-r from-indigo-500 via-violet-500 to-purple-500 p-[1px]">
@@ -162,6 +186,18 @@ export default function About({ dark }) {
         .float-dot-4 {
         animation: floatD 7s ease-in-out infinite;
       }
+
+      .fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
     `}</style>
     </>
   );

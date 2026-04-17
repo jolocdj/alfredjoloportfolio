@@ -189,7 +189,7 @@ export default function Works({ dark }) {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full overflow-hidden px-6 md:px-10 lg:px-16 pt-10 md:pt-14 pb-10"
+      className="relative w-full overflow-hidden px-6 md:px-10 lg:px-16 pt-10 md:pt-9 pb-10"
       style={{
         fontFamily:
           '"SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif',

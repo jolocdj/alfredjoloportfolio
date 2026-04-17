@@ -26,7 +26,7 @@ export default function Footer({ dark }) {
               }`}
             />
             <p className="text-sm leading-6">
-              Software Engineer crafting digital experiences.
+              Software developer crafting digital experiences.
             </p>
           </div>
 

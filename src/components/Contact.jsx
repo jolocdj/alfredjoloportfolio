@@ -100,7 +100,7 @@ export default function Contact({ dark }) {
     <section
       ref={sectionRef}
       id="contact"
-      className="relative overflow-hidden px-6 md:px-12 lg:px-20 py-2 flex items-start pt-1 transition-colors duration-300"
+      className="relative overflow-hidden px-6 md:px-12 lg:px-20 pt-16 md:pt-5 pb-9 flex items-start transition-colors duration-300"
     >
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute right-[10%] top-[18%] h-[190px] w-[190px] rounded-full border border-indigo-400/20" />
