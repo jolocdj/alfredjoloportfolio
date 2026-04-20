@@ -145,6 +145,25 @@ const projects = [
       "Vercel",
     ],
   },
+  {
+    title: "MoveOnBot (Discord Bot)",
+    description:
+      "Developed a Discord bot for those who are brokenhearted. The bot features a range of functionalities including automated moderation, interactive games, and seamless integration with various Discord APIs. Built with a focus on reliability and performance, the bot ensures smooth operation even under high usage scenarios.",
+    image: "/Proj-DC.png",
+    type: "image",
+    tags: ["Discord API", "Node.js", "JavaScript", "Express.js", "3+"],
+    link: "https://discord.com/oauth2/authorize?client_id=1494650343798079589&permissions=2147567616&integration_type=0&scope=bot+applications.commands",
+    fullDescription:
+      "Developed a Discord bot for those who are brokenhearted. The bot features a range of functionalities including automated moderation, interactive games, and seamless integration with various Discord APIs. Built with a focus on reliability and performance, the bot ensures smooth operation even under high usage scenarios.",
+    builtWith: [
+      "Discord API",
+      "Node.js",
+      "JavaScript",
+      "Express.js",
+      "Git",
+      "Discord.js",
+    ],
+  },
 ];
 
 export default function Works({ dark }) {
