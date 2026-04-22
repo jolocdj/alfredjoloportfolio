@@ -210,7 +210,11 @@ export default function Contact({ dark }) {
                   href="https://github.com/jolocdj"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl border px-4 py-3 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 border-white/10 bg-white/[0.04] text-white hover:bg-white/[0.07]"
+                  className={`inline-flex items-center gap-2 rounded-xl border px-4 py-3 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 ${
+                    dark
+                      ? "border-white/10 bg-white/[0.04] text-white hover:bg-white/[0.07]"
+                      : "border-slate-200 bg-white text-slate-900 hover:bg-slate-100"
+                  }`}
                 >
                   GitHub
                 </a>
@@ -219,7 +223,11 @@ export default function Contact({ dark }) {
                   href="https://www.linkedin.com/in/alfred-jolo-de-jesus-5227b7379/?locale=en"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl border px-4 py-3 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 border-white/10 bg-white/[0.04] text-white hover:bg-white/[0.07]"
+                  className={`inline-flex items-center gap-2 rounded-xl border px-4 py-3 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 ${
+                    dark
+                      ? "border-white/10 bg-white/[0.04] text-white hover:bg-white/[0.07]"
+                      : "border-slate-200 bg-white text-slate-900 hover:bg-slate-100"
+                  }`}
                 >
                   LinkedIn
                 </a>

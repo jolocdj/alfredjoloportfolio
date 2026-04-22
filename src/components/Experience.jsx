@@ -9,10 +9,6 @@ const experiences = [
         date: "January, 2026 - March, 2026",
         promoted: true,
       },
-      {
-        title: "QA Tester Intern",
-        date: "January, 2026 - March, 2026",
-      },
     ],
     overallDate: "January, 2026 - March, 2026",
     tags: [

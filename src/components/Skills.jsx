@@ -6,7 +6,6 @@ const skillCategories = [
     skills: [
       "Bootstrap",
       "Tailwind CSS",
-      "jQuery",
       "React.js",
       "Next.js",
       "Vue.js",
@@ -29,7 +28,6 @@ const skillCategories = [
       "Spring Boot",
       "C#",
       "Django",
-      "Unit Testing",
       "Rest API",
       "PHP",
       "Discord.js",
@@ -37,11 +35,11 @@ const skillCategories = [
   },
   {
     title: "TOOLS & DEVOPS",
-    skills: ["Git", "GitHub", "Linux", "PHPUnit", "Jira", "Slack", "AWS"],
+    skills: ["Git", "GitHub", "Linux", "XAMPP", "Jira", "Slack", "AWS"],
   },
   {
     title: "DESIGN & CREATIVE",
-    skills: ["Figma", "Adobe XD", "Photoshop", "After Effects"],
+    skills: ["Figma", "Adobe XD", "Photoshop", "Framer"],
   },
   {
     title: "IDES & ONLINE EDITORS",
