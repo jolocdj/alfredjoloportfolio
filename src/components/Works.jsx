@@ -164,6 +164,27 @@ const projects = [
       "Discord.js",
     ],
   },
+  {
+    title: "Achievo (Work in Progress)",
+    description:
+      "Achievo is a productivity and task management web application designed to help users organize their daily activities, track progress, and stay focused on their goals. The platform provides an intuitive dashboard where users can manage tasks, monitor schedules through a calendar view, and keep track of ongoing work in a structured and visually appealing interface.",
+    image: "",
+    type: "video",
+    tags: ["Javascript", "Node.js", "HTML", "Tailwind CSS", "5+"],
+    fullDescription:
+      "Achievo is a productivity and task management web application designed to help users organize their daily activities, track progress, and stay focused on their goals. The platform provides an intuitive dashboard where users can manage tasks, monitor schedules through a calendar view, and keep track of ongoing work in a structured and visually appealing interface.",
+    builtWith: [
+      "Javascript",
+      "Node.js",
+      "HTML",
+      "Tailwind CSS",
+      "Git",
+      "Vite.js",
+      "Thunder Client",
+      "Rest API",
+      "PostgreSQL",
+    ],
+  },
 ];
 
 export default function Works({ dark }) {
