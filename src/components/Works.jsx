@@ -163,6 +163,7 @@ const projects = [
     image: "",
     type: "video",
     tags: ["Javascript", "Node.js", "HTML", "Tailwind CSS", "5+"],
+    link: "https://achievo-59su.onrender.com/",
     fullDescription:
       "Achievo is a productivity and task management web application designed to help users organize their daily activities, track progress, and stay focused on their goals. The platform provides an intuitive dashboard where users can manage tasks, monitor schedules through a calendar view, and keep track of ongoing work in a structured and visually appealing interface.",
     builtWith: [
@@ -176,6 +177,16 @@ const projects = [
       "Rest API",
       "PostgreSQL",
     ],
+  },
+  {
+    title: "Sortify",
+    description:
+      "Sortify is a smart organization system designed to simplify the way users manage and categorize items or data. It streamlines sorting processes through an intuitive interface, improving efficiency, accuracy, and accessibility. The system is built to enhance productivity by helping users quickly organize, track, and retrieve information in a structured and user-friendly way.",
+    type: "video",
+    tags: ["Kotlin", "Node.js", "XML", "Firebase", "1+"],
+    fullDescription:
+      "Sortify is a smart organization system designed to simplify the way users manage and categorize items or data. It streamlines sorting processes through an intuitive interface, improving efficiency, accuracy, and accessibility. The system is built to enhance productivity by helping users quickly organize, track, and retrieve information in a structured and user-friendly way.",
+    builtWith: ["Kotlin", "Node.js", "XML", "Tailwind CSS", "Firebase", "Java"],
   },
 ];
 
