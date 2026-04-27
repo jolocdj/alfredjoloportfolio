@@ -131,19 +131,11 @@ const projects = [
       "Developed a photobooth web app that allows users to capture and customize photos using their device's camera. The app supports seamless integration with the device's camera API for smooth photo capture, while providing options for saving and sharing photos directly from the platform. Built with a focus on performance and responsiveness, the app ensures quick loading times and an intuitive user flow, while maintaining scalability for future feature additions such as social media integration and advanced editing capabilities.",
     image: "",
     type: "video",
-    tags: ["React", "Tailwind CSS", "HTML", "Javascript", "3+"],
+    tags: ["HTML", "CSS", "Javascript", "Node.js", "2+"],
     link: "#",
     fullDescription:
       "Developed a photobooth web app that allows users to capture and customize photos using their device's camera. The app supports seamless integration with the device's camera API for smooth photo capture, while providing options for saving and sharing photos directly from the platform. Built with a focus on performance and responsiveness, the app ensures quick loading times and an intuitive user flow, while maintaining scalability for future feature additions such as social media integration and advanced editing capabilities.",
-    builtWith: [
-      "React",
-      "Tailwind CSS",
-      "HTML",
-      "Javascript",
-      "Git",
-      "Vite.js",
-      "Vercel",
-    ],
+    builtWith: ["HTML", "CSS", "Javascript", "Node.js", "Git", "Vercel"],
   },
   {
     title: "MoveOnBot (Discord Bot)",
