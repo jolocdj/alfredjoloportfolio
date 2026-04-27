@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 const stats = [
   { icon: Clock, value: 1, suffix: "+", label: "Years Experience" },
-  { icon: FileText, value: 9, suffix: "+", label: "Projects Completed" },
+  { icon: FileText, value: 10, suffix: "+", label: "Projects Completed" },
   { icon: Code2, value: 38, suffix: "+", label: "Technologies" },
   { icon: BadgeCheck, value: 6, suffix: "", label: "Certifications" },
 ];
