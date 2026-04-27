@@ -126,15 +126,15 @@ const projects = [
     builtWith: ["HTML", "Javascript", "React", "Supabase", "HTML", "Vite.js"],
   },
   {
-    title: "Personal Website Portfolio",
+    title: "Photobooth Web App (Work in Progress)",
     description:
-      "Developed a personal professional portfolio website to effectively present technical skills, projects, and experience through a clean, modern, and responsive interface, featuring structured sections for project highlights, detailed descriptions, and role contributions. The platform emphasizes usability and performance with intuitive navigation, optimized loading, and mobile-friendly design, while maintaining a scalable architecture that allows continuous updates and seamless integration of new projects and achievements.",
-    image: "/Proj-PPF.png",
-    type: "image",
+      "Developed a photobooth web app that allows users to capture and customize photos using their device's camera. The app supports seamless integration with the device's camera API for smooth photo capture, while providing options for saving and sharing photos directly from the platform. Built with a focus on performance and responsiveness, the app ensures quick loading times and an intuitive user flow, while maintaining scalability for future feature additions such as social media integration and advanced editing capabilities.",
+    image: "",
+    type: "video",
     tags: ["React", "Tailwind CSS", "HTML", "Javascript", "3+"],
     link: "#",
     fullDescription:
-      "Developed a personal professional portfolio website to effectively present technical skills, projects, and experience through a clean, modern, and responsive interface, featuring structured sections for project highlights, detailed descriptions, and role contributions. The platform emphasizes usability and performance with intuitive navigation, optimized loading, and mobile-friendly design, while maintaining a scalable architecture that allows continuous updates and seamless integration of new projects and achievements.",
+      "Developed a photobooth web app that allows users to capture and customize photos using their device's camera. The app supports seamless integration with the device's camera API for smooth photo capture, while providing options for saving and sharing photos directly from the platform. Built with a focus on performance and responsiveness, the app ensures quick loading times and an intuitive user flow, while maintaining scalability for future feature additions such as social media integration and advanced editing capabilities.",
     builtWith: [
       "React",
       "Tailwind CSS",
