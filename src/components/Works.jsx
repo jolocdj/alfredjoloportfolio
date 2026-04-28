@@ -126,10 +126,10 @@ const projects = [
     builtWith: ["HTML", "Javascript", "React", "Supabase", "HTML", "Vite.js"],
   },
   {
-    title: "Photobooth Web App (Work in Progress)",
+    title: "AJ's Photobooth Web App",
     description:
       "Developed a photobooth web app that allows users to capture and customize photos using their device's camera. The app supports seamless integration with the device's camera API for smooth photo capture, while providing options for saving and sharing photos directly from the platform. Built with a focus on performance and responsiveness, the app ensures quick loading times and an intuitive user flow, while maintaining scalability for future feature additions such as social media integration and advanced editing capabilities.",
-    image: "",
+    image: "Proj-PB.mp4",
     type: "video",
     tags: ["HTML", "CSS", "Javascript", "Node.js", "2+"],
     link: "#",
