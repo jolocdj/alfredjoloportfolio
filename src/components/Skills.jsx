@@ -20,12 +20,10 @@ const skillCategories = [
       "Node.js",
       "PostgreSQL",
       "MySQL",
-      "MongoDB",
       "Supabase",
       "Firebase",
       "Java",
       "Kotlin",
-      "Spring Boot",
       "C#",
       "Django",
       "Rest API",
@@ -35,7 +33,7 @@ const skillCategories = [
   },
   {
     title: "TOOLS & DEVOPS",
-    skills: ["Git", "GitHub", "Linux", "XAMPP", "Jira", "Slack", "AWS"],
+    skills: ["Git", "GitHub", "XAMPP", "Jira", "AWS"],
   },
   {
     title: "DESIGN & CREATIVE",
@@ -43,7 +41,7 @@ const skillCategories = [
   },
   {
     title: "IDES & ONLINE EDITORS",
-    skills: ["Android Studio", "VS Code", "Visual Studio", "CodePen"],
+    skills: ["Android Studio", "VS Code", "CodePen"],
   },
 ];
 
