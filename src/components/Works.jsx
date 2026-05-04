@@ -188,6 +188,27 @@ const projects = [
       "Sortify is a smart organization system designed to simplify the way users manage and categorize items or data. It streamlines sorting processes through an intuitive interface, improving efficiency, accuracy, and accessibility. The system is built to enhance productivity by helping users quickly organize, track, and retrieve information in a structured and user-friendly way.",
     builtWith: ["Kotlin", "Node.js", "XML", "Tailwind CSS", "Firebase", "Java"],
   },
+  {
+    title: "MediGo - Medicine Buying and Delivery App",
+    description:
+      "MediGo is a mobile application designed to make it easy for users to buy and deliver medicines. The app provides a seamless experience for users to browse through a wide range of medications, place orders, and have them delivered to their doorstep. With a user-friendly interface and reliable delivery service, MediGo aims to improve access to healthcare by making medicine procurement more convenient and efficient.",
+    type: "video",
+    tags: ["Flutter", "Node.js", "XML", "Tailwind CSS", "6+"],
+    fullDescription:
+      "MediGo is a mobile application designed to make it easy for users to buy and deliver medicines. The app provides a seamless experience for users to browse through a wide range of medications, place orders, and have them delivered to their doorstep. With a user-friendly interface and reliable delivery service, MediGo aims to improve access to healthcare by making medicine procurement more convenient and efficient.",
+    builtWith: [
+      "Flutter",
+      "Node.js",
+      "XML",
+      "Tailwind CSS",
+      "Firebase",
+      "Java",
+      "Git",
+      "Vite.js",
+      "Rest API",
+      "PostgreSQL",
+    ],
+  },
 ];
 
 export default function Works({ dark }) {
