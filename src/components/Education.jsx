@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 
 const education = [
   {
-    school: "Bulacan State University",
+    school: "Bulacan State University - Hagonoy Campus",
     degree:
       "Bachelor of Science in Information Technology Specializing in Web and Mobile Application Development",
     date: "Aug 2022 - June 2026",
