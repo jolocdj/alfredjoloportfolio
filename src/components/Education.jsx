@@ -6,7 +6,7 @@ const education = [
     degree:
       "Bachelor of Science in Information Technology Specializing in Web and Mobile Application Development",
     date: "Aug 2022 - June 2026",
-    graduated: false,
+    graduated: true,
   },
   {
     school: "Iba National Senior High School",
