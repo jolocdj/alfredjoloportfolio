@@ -3,7 +3,7 @@ import { Sparkles } from "lucide-react";
 
 const awards = [
   {
-    title: "Running for Cum Laude in BSIT-WMA",
+    title: "Cum Laude - BS in Information Technology",
     organization: "Bulacan State University",
     date: "June 2026",
   },

@@ -1,6 +1,30 @@
 import { useEffect, useRef } from "react";
 const experiences = [
   {
+    company: "Ubiquity",
+    grouped: true,
+    roles: [
+      {
+        title: "Network DevOps Engineer",
+        date: "June, 2026 - Present",
+        promoted: true,
+      },
+    ],
+    overallDate: "June, 2026 - Present",
+    tags: [
+      "Linux",
+      "Python",
+      "AWS",
+      "Tailwind CSS",
+      "Docker",
+      "AJAX",
+      "JavaScript",
+      "CI/CD Pipelines",
+      "Git",
+      "Jira",
+    ],
+  },
+  {
     company: "Highly Succeed Inc.",
     grouped: true,
     roles: [
