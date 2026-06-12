@@ -118,8 +118,9 @@ export default function Hero({ dark }) {
             lineHeight: "clamp(1.6rem, 3vw, 1.9rem)",
           }}
         >
-          I build scalable web applications with React Native, Javascript, and
-          modern technologies.
+          I build and maintain scalable infrastructure, automate operations, and
+          support reliable enterprise systems through DevOps and network
+          engineering practices.
         </p>
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-2 w-full sm:w-auto">

@@ -79,7 +79,9 @@ export default function About({ dark }) {
 
                   <div>
                     <h3 className="text-2xl font-bold">Alfred Jolo De Jesus</h3>
-                    <p className="text-white/80 mt-1">Software Developer</p>
+                    <p className="text-white/80 mt-1">
+                      Network DevOps Engineer
+                    </p>
                     <p className="mt-4 text-white/90">
                       BSIT graduate from Bulacan State University. Specializing
                       in Python and Javascript for back-end, with front-end
