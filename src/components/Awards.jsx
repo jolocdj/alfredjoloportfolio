@@ -8,7 +8,7 @@ const awards = [
     date: "June 2026",
   },
   {
-    title: "Candidate for Best in Thesis",
+    title: "Candidate for Best in Capstone Project",
     organization: "Bulacan State University",
     date: "November 2025",
   },
