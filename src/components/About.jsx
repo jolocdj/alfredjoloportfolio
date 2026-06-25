@@ -60,8 +60,8 @@ export default function About({ dark }) {
               className={`mt-5 text-sm text-xl
  ${dark ? "text-gray-400" : "text-slate-500"}`}
             >
-              Software Developer focused on building reliable and scalable web
-              applications.
+              Network DevOps Engineer focused on building reliable, scalable,
+              and secure infrastructure.
             </p>
           </div>
           {/* Cards */}
@@ -72,7 +72,7 @@ export default function About({ dark }) {
               <div className="md:col-span-2 p-8 rounded-3xl bg-gradient-to-br from-indigo-500 to-violet-600 text-white">
                 <div className="flex flex-col md:flex-row gap-6 items-center">
                   <img
-                    src="/profile.jpg"
+                    src="/image.png"
                     alt="Profile"
                     className="profile-img h-28 w-28 rounded-xl object-cover transition-all duration-300 ease-out hover:shadow-2xl"
                   />

@@ -21,7 +21,7 @@ const experiences = [
       "JavaScript",
       "CI/CD Pipelines",
       "Git",
-      "Jira",
+      "SNMP",
     ],
   },
   {
