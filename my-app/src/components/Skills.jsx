@@ -21,12 +21,11 @@ const skillCategories = [
       "Node.js",
       "PostgreSQL",
       "MySQL",
-      "MongoDB",
+      "Python",
       "Supabase",
       "Firebase",
       "Java",
       "Kotlin",
-      "Spring Boot",
       "C#",
       "Django",
       "Unit Testing",
@@ -37,7 +36,7 @@ const skillCategories = [
   },
   {
     title: "TOOLS & DEVOPS",
-    skills: ["Git", "GitHub", "Linux", "PHPUnit", "Jira", "Slack", "AWS"],
+    skills: ["Git", "GitHub", "Linux", "Docker", "Jira", "AWS"],
   },
   {
     title: "DESIGN & CREATIVE",
